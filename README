@@ -1,0 +1,5 @@
+# jloomis@gmail.com - crappy modified facebook chat example with oauth 2.0
+# Facebook's chat server doesn't accept ssl connections, hence no access token
+# authentication. To get around that, we parse a session key out of the
+# access token, and use an old facebook REST API method - auth.promoteSession -
+# to associate a secret with it.
